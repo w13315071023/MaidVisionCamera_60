@@ -301,3 +301,6 @@ $RECYCLE.BIN/
 
 # Windows shortcuts
 *.lnk
+Debug.win32/
+Release.win32/
+opengl32.pdb/

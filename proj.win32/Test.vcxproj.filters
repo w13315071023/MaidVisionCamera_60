@@ -1,0 +1,183 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="win32">
+      <UniqueIdentifier>{84a8ebd7-7cf0-47f6-b75e-d441df67da40}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes">
+      <UniqueIdentifier>{bb6c862e-70e9-49d9-81b7-3829a6f50471}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\PostureAnalysis">
+      <UniqueIdentifier>{123fc4d1-8c5b-455d-82eb-3a972ff98def}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\DataAnalysis">
+      <UniqueIdentifier>{c2e1574a-389f-4726-bb30-90a2606dbb1e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\HelloWorld">
+      <UniqueIdentifier>{c89280a9-bf99-465c-b417-613ba60ecf5f}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>win32</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\AppDelegate.cpp">
+      <Filter>Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Tools.cpp">
+      <Filter>Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\DemoVideoLayer.cpp">
+      <Filter>Classes\PostureAnalysis</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\MovieVideoLayer.cpp">
+      <Filter>Classes\PostureAnalysis</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\PostureAnalysisScene.cpp">
+      <Filter>Classes\PostureAnalysis</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\DataAnalysisScene.cpp">
+      <Filter>Classes\DataAnalysis</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\DataShowLayer.cpp">
+      <Filter>Classes\DataAnalysis</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\GroundLayer.cpp">
+      <Filter>Classes\DataAnalysis</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\ParabolicLayer.cpp">
+      <Filter>Classes\DataAnalysis</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\TargetLayer.cpp">
+      <Filter>Classes\DataAnalysis</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\DrawNode.cpp">
+      <Filter>Classes\DataAnalysis</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\VideoClass.cpp">
+      <Filter>Classes\PostureAnalysis</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\HelloWorldScene.cpp">
+      <Filter>Classes\HelloWorld</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\UINode.cpp">
+      <Filter>Classes\HelloWorld</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\DrawingLayer.cpp">
+      <Filter>Classes\PostureAnalysis</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\SerialMager.cpp">
+      <Filter>Classes\PostureAnalysis</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\DataMager.cpp">
+      <Filter>Classes\DataAnalysis</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\GolfXIMager.cpp">
+      <Filter>Classes\HelloWorld</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\golf_sensor_interface.c">
+      <Filter>Classes\HelloWorld</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\LodingScene.cpp">
+      <Filter>Classes\HelloWorld</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\GuangGao.cpp">
+      <Filter>Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\ResetGGMager.cpp">
+      <Filter>Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\RecordClass.cpp">
+      <Filter>Classes\PostureAnalysis</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\SettingScene.cpp">
+      <Filter>Classes\HelloWorld</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\DataView.cpp">
+      <Filter>Classes\DataAnalysis</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="main.h">
+      <Filter>win32</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\AppDelegate.h">
+      <Filter>Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\AppMacros.h">
+      <Filter>Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Tools.h">
+      <Filter>Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\DemoVideoLayer.h">
+      <Filter>Classes\PostureAnalysis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\MovieVideoLayer.h">
+      <Filter>Classes\PostureAnalysis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\PostureAnalysisScene.h">
+      <Filter>Classes\PostureAnalysis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\DataAnalysisScene.h">
+      <Filter>Classes\DataAnalysis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\DataShowLayer.h">
+      <Filter>Classes\DataAnalysis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\GroundLayer.h">
+      <Filter>Classes\DataAnalysis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\ParabolicLayer.h">
+      <Filter>Classes\DataAnalysis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\TargetLayer.h">
+      <Filter>Classes\DataAnalysis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\DrawNode.h">
+      <Filter>Classes\DataAnalysis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\VideoClass.h">
+      <Filter>Classes\PostureAnalysis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\HelloWorldScene.h">
+      <Filter>Classes\HelloWorld</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\UINode.h">
+      <Filter>Classes\HelloWorld</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\DrawingLayer.h">
+      <Filter>Classes\PostureAnalysis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\SerialMager.h">
+      <Filter>Classes\PostureAnalysis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\DataMager.h">
+      <Filter>Classes\DataAnalysis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\GolfXIMager.h">
+      <Filter>Classes\HelloWorld</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\golf_sensor_interface.h">
+      <Filter>Classes\HelloWorld</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\LodingScene.h">
+      <Filter>Classes\HelloWorld</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\GuangGao.h">
+      <Filter>Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\ResetGGMager.h">
+      <Filter>Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\RecordClass.h">
+      <Filter>Classes\PostureAnalysis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\SettingScene.h">
+      <Filter>Classes\HelloWorld</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\DataView.h">
+      <Filter>Classes\DataAnalysis</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
