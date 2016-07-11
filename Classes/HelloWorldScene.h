@@ -20,6 +20,7 @@ public:
     static cocos2d::CCScene* scene();
     //按钮的回调函数
     void menuCallback(CCObject* pSender);
+	void menuEndCallback(CCObject* pSender);
 	void menuSettingCallback(CCObject* pSender);
 	void menuCueTtpeCallback(CCObject* pSender);
 	void menuGenderCallback(CCObject* pSender);

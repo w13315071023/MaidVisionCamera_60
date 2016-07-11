@@ -6,6 +6,7 @@ extern INT	Ext_cameraNum = 0;
 extern bool Ext_IsGolfXI = false;
 extern bool Ext_IsResetGG = false;
 extern bool Ext_IsThreadOn = false;
+extern bool Ext_IsTurnEnd = false;
 extern bool Ext_IsRecordBegin = false;
 extern int Ext_VideoSize = 0;
 extern int Ext_VideoSleep = 1000;

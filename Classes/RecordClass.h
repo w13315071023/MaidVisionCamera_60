@@ -16,6 +16,7 @@ public:
 public:
 	RecordClass(void);
 	~RecordClass(void);
+	void Destructor();
 	bool init(tSdkCameraDevInfo CameraInfo);
 	void ThreadCallBack();
 	VideoRAW* getBufferByIndex(int index);

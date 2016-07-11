@@ -23,7 +23,6 @@ CCScene* HelloWorld::scene()
     // return the scene
     return scene;
 }
-
 // on "init" you need to initialize your instance
 bool HelloWorld::init()
 {
@@ -83,12 +82,18 @@ bool HelloWorld::init()
 									"HomeUI/jinruxitong2.png",
 									this,
 									menu_selector(HelloWorld::menuCallback));
+	CCMenuItemImage* pEndItem = CCMenuItemImage::create(
+									"HomeUI/tuichuxitong1.png",
+									"HomeUI/tuichuxitong2.png",
+									this,
+									menu_selector(HelloWorld::menuEndCallback));
     CCSprite* pSprite1 = CCSprite::create("HomeUI/bianyuanguang.png");
     CCSprite* pSprite2 = CCSprite::create("HomeUI/bianyuanguang.png");
     //为控件设置位置
 	pBackGround->setPosition(ccp(VISIBLEW/2,VISIBLEH/2));
 
-	pBeginItem->setPosition(ccp(VISIBLEW / 2 - 200, 130));
+	pBeginItem->setPosition(ccp(VISIBLEW / 2 - 400, 130));
+	pEndItem->setPosition(ccp(VISIBLEW / 2 + 400, 130));
 
 	m_pCueTtpeArr[0]->setPosition(ccp(VISIBLEW / 2 - 350, VISIBLEH*0.4 + 300));
 	m_pCueTtpeArr[1]->setPosition(ccp(VISIBLEW / 2 - 350, VISIBLEH*0.4 + 170));
@@ -120,7 +125,7 @@ bool HelloWorld::init()
 		"HomeUI/shezhi2.png",
 		this,
 		menu_selector(HelloWorld::menuSettingCallback));
-	pSetting->setPosition(ccp(VISIBLEW/2+200,130));
+	pSetting->setPosition(ccp(VISIBLEW/2,130));
 	CCMenu* pMenu = CCMenu::create(
 								m_pCueTtpeArr[0],
 								m_pCueTtpeArr[1],
@@ -129,6 +134,7 @@ bool HelloWorld::init()
 								m_pGenderArr[0],
 								m_pGenderArr[1],
 								pBeginItem,
+								pEndItem,
 								pSetting,NULL);
     pMenu->setPosition(CCPointZero);
     this->addChild(pMenu, 1);
@@ -165,6 +171,19 @@ void HelloWorld::menuCallback(CCObject* pSender)
 
 	printf("转到姿势分析界面\n");
 	CCDirector::sharedDirector()->replaceScene(PostureAnalysisScene::CreateScene());
+}
+void HelloWorld::menuEndCallback(CCObject* pSender)
+{
+	Ext_IsTurnEnd = true;
+	if (MovieVideoLayer::m_Camera1)
+	{
+		MovieVideoLayer::m_Camera1->Destructor();
+	}
+	if (MovieVideoLayer::m_Camera2)
+	{
+		MovieVideoLayer::m_Camera2->Destructor();
+	}
+	CCDirector::sharedDirector()->end();
 }
 void HelloWorld::menuSettingCallback(CCObject* pSender)
 {

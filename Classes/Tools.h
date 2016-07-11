@@ -75,6 +75,7 @@ extern bool Ext_IsRecordBegin;
 extern bool Ext_TiaoShi;
 extern bool Ext_IsFrontCamera;
 extern bool Ext_IsTurnCamera;
+extern bool Ext_IsTurnEnd;
 
 enum MENUTAG
 {
