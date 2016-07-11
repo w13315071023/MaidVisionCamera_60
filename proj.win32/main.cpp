@@ -55,7 +55,7 @@ int APIENTRY _tWinMain(HINSTANCE hInstance,
 	UNREFERENCED_PARAMETER(hPrevInstance);
 	UNREFERENCED_PARAMETER(lpCmdLine);
 
-	Ext_TiaoShi = true;
+	Ext_TiaoShi = false;
 	if (!Ext_TiaoShi)
 	{
 		freopen("DeBugMsg.txt", "w", stdout);

@@ -25,7 +25,7 @@ bool RecordClass::init(tSdkCameraDevInfo CameraInfo)
 	for (size_t i = 0; i < 300; i++)
 	{
 		VideoRAW* pVideoRGB24 = new VideoRAW();
-		pVideoRGB24->FrameData = CameraAlignMalloc(m_sCameraInfo.sResolutionRange.iWidthMax*m_sCameraInfo.sResolutionRange.iHeightMax*3, 16);
+		pVideoRGB24->FrameData = CameraAlignMalloc(m_sCameraInfo.sResolutionRange.iWidthMax*m_sCameraInfo.sResolutionRange.iHeightMax*2, 16);
 		m_Buffer.push_back(pVideoRGB24);
 	}
 	BufferSize = m_sCameraInfo.sResolutionRange.iWidthMax*m_sCameraInfo.sResolutionRange.iHeightMax * 3;
