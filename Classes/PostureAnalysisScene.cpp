@@ -643,11 +643,11 @@ void PostureAnalysisScene::Update(float dt)
 			}
 			else
 			{
-				m_pFrontDemoVideoLayer->ReSetVideo();
+				m_pFrontDemoVideoLayer->ReSetDemoVideo();
 				m_pFrontMovieVideoLayer->ReSetVideo();
 				if (Ext_cameraNum == 2)
 				{
-					m_pSideDemoVideoLayer->ReSetVideo();
+					m_pSideDemoVideoLayer->ReSetDemoVideo();
 					m_pSideMovieVideoLayer->ReSetVideo();
 				}
 				m_bIsPlayVideo = false;
@@ -746,11 +746,11 @@ void PostureAnalysisScene::CallbackRePlay(CCObject* pSender)
 	{
 		m_bIsPlayVideo = false;
 
-		m_pFrontDemoVideoLayer->ReSetVideo();
+		m_pFrontDemoVideoLayer->ReSetDemoVideo();
 		m_pFrontMovieVideoLayer->ReSetVideo();
 		if (Ext_cameraNum == 2)
 		{
-			m_pSideDemoVideoLayer->ReSetVideo();
+			m_pSideDemoVideoLayer->ReSetDemoVideo();
 			m_pSideMovieVideoLayer->ReSetVideo();
 		}
 		if (m_bIsStepPlay == true)
@@ -800,7 +800,7 @@ void PostureAnalysisScene::CallbackPause(CCObject* pSender)
 		}
 		else
 		{
-			m_pFrontDemoVideoLayer->ReSetVideo();
+			m_pFrontDemoVideoLayer->ReSetDemoVideo();
 			m_pFrontMovieVideoLayer->ReSetVideo();
 			m_pFrontDemoVideoLayer->m_IsPlayOver = false;
 			m_pFrontMovieVideoLayer->m_IsPlayOver = false;
@@ -808,7 +808,7 @@ void PostureAnalysisScene::CallbackPause(CCObject* pSender)
 			{
 				m_pSideDemoVideoLayer->m_IsPlayOver = false;
 				m_pSideMovieVideoLayer->m_IsPlayOver = false;
-				m_pSideDemoVideoLayer->ReSetVideo();
+				m_pSideDemoVideoLayer->ReSetDemoVideo();
 				m_pSideMovieVideoLayer->ReSetVideo();
 			}
 			m_bIsPlayVideo = true;
@@ -823,11 +823,11 @@ void PostureAnalysisScene::CallbackPause(CCObject* pSender)
 }
 void PostureAnalysisScene::CallbackPreview(CCObject* pSender)
 {
-	m_pFrontDemoVideoLayer->ReSetVideo();
+	m_pFrontDemoVideoLayer->ReSetDemoVideo();
 	m_pFrontMovieVideoLayer->ReSetVideo();
 	if (Ext_cameraNum == 2)
 	{
-		m_pSideDemoVideoLayer->ReSetVideo();
+		m_pSideDemoVideoLayer->ReSetDemoVideo();
 		m_pSideMovieVideoLayer->ReSetVideo();
 	}
 	m_bIsPlayVideo = false;

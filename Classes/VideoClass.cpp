@@ -83,5 +83,10 @@ void VideoClass::ShowDemoVideo()
 void VideoClass::ReSetVideo()
 {
 	this->m_VideoIter = this->m_VideoList.begin();
+	this->ShowVideo();
+}
+void VideoClass::ReSetDemoVideo()
+{
+	this->m_VideoIter = this->m_VideoList.begin();
 	this->ShowDemoVideo();
 }

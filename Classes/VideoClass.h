@@ -17,6 +17,7 @@ public:
 	virtual ~VideoClass(void);
 	void ShowVideo();
 	void ShowDemoVideo();
+	void ReSetDemoVideo();
 	void ReSetVideo();
 };
 
