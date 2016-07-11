@@ -58,7 +58,7 @@ bool MovieVideoLayer::init(int Direction)
 	}
 	
 	m_pFrameImageRGB = (unsigned char*)av_malloc(m_Camera->BufferSize);
-	this->setRotationY(180);
+	this->setRotation(180);
 	CCSprite* beijing2 = CCSprite::create("VideoUI/beijing2.png");
 	beijing2->setPosition(ccp(VISIBLEW/2,VISIBLEH/2));
 	this->addChild(beijing2);
@@ -71,10 +71,12 @@ void MovieVideoLayer::update(float dt)
 {
 	m_ShowIndex = (m_Camera->getBuffIndex() - 1<0) ? 299 : m_Camera->getBuffIndex() - 1;
 	m_FrameImageHead = m_Camera->getBufferByIndex(m_ShowIndex)->FrameHead;
+
 	CameraImageProcess(m_Camera->m_hCamera,
 		m_Camera->getBufferByIndex(m_ShowIndex)->FrameData,
 		m_pFrameImageRGB,
 		&m_FrameImageHead);
+
 	m_pTexture->updateVideoWithData(
 		m_pFrameImageRGB,
 		kTexture2DPixelFormat_RGB888,

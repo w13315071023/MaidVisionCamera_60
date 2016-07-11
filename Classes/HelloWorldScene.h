@@ -12,6 +12,7 @@ public:
 	float m_curTarget;
     CCMenuItemImage* m_pCueTtpeArr[4];
     CCMenuItemImage* m_pGenderArr[2];
+	bool m_isBeginButtonOn;
 
     //³õÊ¼»¯º¯Êý
     virtual bool init();

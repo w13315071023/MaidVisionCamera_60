@@ -266,6 +266,8 @@ bool PostureAnalysisScene::init()
 		m_pFrontMovieVideoLayer->setScale(1.125);
 		m_pSideMovieVideoLayer->setScale(1.125);
 
+		m_pFrontMovieVideoLayer->setVisible(true);
+		m_pSideMovieVideoLayer->setVisible(true);
 		//设置视图按钮的标签
 		m_pFourViewItem->setTag(MENUTAG_FourView);
 		m_pFrontViewItem->setTag(MENUTAG_FrontView);

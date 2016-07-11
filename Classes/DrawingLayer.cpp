@@ -34,6 +34,7 @@ bool DrawingLayer::init()
 	m_pFontBox = CCSprite::create("UI_DrawLayer/字体边缘光.png");
 	m_pFontBox->setPosition(ccp(1857, -100));
 	this->addChild(m_pFontBox);
+
     //创建绘图按钮开关
 	m_pMenuItemToggle = CCMenuItemToggle::createWithTarget(
 		this, menu_selector(DrawingLayer::menuToggleCallBack),

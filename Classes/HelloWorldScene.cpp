@@ -35,6 +35,7 @@ bool HelloWorld::init()
     {//初始化成员变量
 		m_curCueType = CUETYPE_TIEGAN;
 		m_curGender = GENDER_MAN;
+		m_isBeginButtonOn = false;
 		
         m_pCueTtpeArr[0] = CCMenuItemImage::create(
 										"HomeUI/yihaomu.png",
@@ -137,6 +138,11 @@ bool HelloWorld::init()
 //按钮的回调函数
 void HelloWorld::menuCallback(CCObject* pSender)
 {
+	if (m_isBeginButtonOn)
+	{
+		return;
+	}
+	m_isBeginButtonOn = true;
 	printf("进入系统\n");
 	Ext_IsResetGG = true;
 	DataMager::shareDataMager()->m_curCuetype = this->m_curCueType;
