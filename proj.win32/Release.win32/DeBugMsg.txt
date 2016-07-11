@@ -1,29 +1,14 @@
-hello, world!OpenGL version = 4.5.0 NVIDIA 358.91
-Ready for GLSL
+hello, world!Ready for GLSL
 Ready for OpenGL 2.0
-
-<dict>
-	cocos2d.x.version: cocos2d-x 2.2.6
-	cocos2d.x.compiled_with_profiler: false
-	cocos2d.x.compiled_with_gl_state_cache: true
-	gl.vendor: NVIDIA Corporation
-	gl.renderer: GeForce GTX 660/PCIe/SSE2
-	gl.version: 4.5.0 NVIDIA 358.91
-	gl.max_texture_size: 16384
-	gl.max_texture_units: 192
-	gl.supports_PVRTC: false
-	gl.supports_NPOT: true
-	gl.supports_BGRA8888: false
-	gl.supports_discard_framebuffer: false
-	gl.supports_vertex_array_object: true
-</dict>
 初始化LodingScene
 GolfSensorInterface Tester (DLL v4.7.0 alpha 1)
+初始化CameraCamera MV-UB30#FAC24A4A-7
 初始化CameraCamera MV-UB31GC#FAC24A4A-1
-Get data from file(D:\cocos2d-x-2.2.6\projects\MaidVision60\proj.win32\Debug.win32\Setting.json) failed!
 Open: false
 Connected: false
 Armed: false
 Sleeping: false
 Leveling: false
  
+初始化HelloWorld
+1相机退出2相机退出

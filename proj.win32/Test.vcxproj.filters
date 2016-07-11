@@ -96,6 +96,9 @@
     <ClCompile Include="..\Classes\DataView.cpp">
       <Filter>Classes\DataAnalysis</Filter>
     </ClCompile>
+    <ClCompile Include="..\Classes\Logo.cpp">
+      <Filter>Classes\HelloWorld</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="main.h">
@@ -178,6 +181,9 @@
     </ClInclude>
     <ClInclude Include="..\Classes\DataView.h">
       <Filter>Classes\DataAnalysis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Logo.h">
+      <Filter>Classes\HelloWorld</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

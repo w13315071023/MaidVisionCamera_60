@@ -152,6 +152,7 @@ xcopy /Y /Q "$(ProjectDir)..\..\..\external\libwebsockets\win32\lib\*.*" "$(OutD
     <ClCompile Include="..\Classes\GuangGao.cpp" />
     <ClCompile Include="..\Classes\HelloWorldScene.cpp" />
     <ClCompile Include="..\Classes\LodingScene.cpp" />
+    <ClCompile Include="..\Classes\Logo.cpp" />
     <ClCompile Include="..\Classes\MovieVideoLayer.cpp" />
     <ClCompile Include="..\Classes\ParabolicLayer.cpp" />
     <ClCompile Include="..\Classes\PostureAnalysisScene.cpp" />
@@ -181,6 +182,7 @@ xcopy /Y /Q "$(ProjectDir)..\..\..\external\libwebsockets\win32\lib\*.*" "$(OutD
     <ClInclude Include="..\Classes\GuangGao.h" />
     <ClInclude Include="..\Classes\HelloWorldScene.h" />
     <ClInclude Include="..\Classes\LodingScene.h" />
+    <ClInclude Include="..\Classes\Logo.h" />
     <ClInclude Include="..\Classes\MovieVideoLayer.h" />
     <ClInclude Include="..\Classes\ParabolicLayer.h" />
     <ClInclude Include="..\Classes\PostureAnalysisScene.h" />

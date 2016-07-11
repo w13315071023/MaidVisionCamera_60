@@ -1,5 +1,5 @@
 #include "AppDelegate.h"
-#include "LodingScene.h"
+#include "Logo.h"
 #include "ResetGGMager.h"
 
 
@@ -28,7 +28,7 @@ bool AppDelegate::applicationDidFinishLaunching() {
     // set FPS. the default value is 1.0/60 if you don't call this
     pDirector->setAnimationInterval(1.0 / 60);
     // create a scene. it's an autorelease object
-	CCScene *pScene = LodingScene::getLodingScene();
+	CCScene *pScene = Logo::getScene();
     // run
     pDirector->runWithScene(pScene);
     return true;
