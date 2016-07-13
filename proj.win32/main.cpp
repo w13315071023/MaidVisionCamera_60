@@ -43,14 +43,14 @@ static void DumpMiniDump(HANDLE hFile, PEXCEPTION_POINTERS excpInfo)
 	}
 }
 
-//int  cocosMain(HINSTANCE hInstance,
-//	HINSTANCE hPrevInstance,
-//	LPTSTR    lpCmdLine,
-//	int       nCmdShow)
-int APIENTRY _tWinMain(HINSTANCE hInstance,
+int  cocosMain(HINSTANCE hInstance,
 	HINSTANCE hPrevInstance,
 	LPTSTR    lpCmdLine,
 	int       nCmdShow)
+//int APIENTRY _tWinMain(HINSTANCE hInstance,
+//	HINSTANCE hPrevInstance,
+//	LPTSTR    lpCmdLine,
+//	int       nCmdShow)
 {
 	UNREFERENCED_PARAMETER(hPrevInstance);
 	UNREFERENCED_PARAMETER(lpCmdLine);
@@ -93,28 +93,28 @@ int APIENTRY _tWinMain(HINSTANCE hInstance,
 	return CCApplication::sharedApplication()->run();
 }
 
-//int APIENTRY _tWinMain(HINSTANCE hInstance,
-//                       HINSTANCE hPrevInstance,
-//                       LPTSTR    lpCmdLine,
-//                       int       nCmdShow)
-//{
-//	// ����һ��Dump�ļ�
-//	HANDLE hFile = CreateFile(_T("MiniDump.dmp"), GENERIC_READ | GENERIC_WRITE,
-//		0, NULL, CREATE_ALWAYS, FILE_ATTRIBUTE_NORMAL, NULL);
-//	int code;
-//	__try
-//	{
-//		// ���Լ�ʵ�ֵ�main������װһ��, ����try .. except ����. �����������쳣�����Զ�����dump
-//		cocosMain(hInstance, hPrevInstance, lpCmdLine, nCmdShow);
-//	}
-//	__except (code = GetExceptionCode(), DumpMiniDump(hFile, GetExceptionInformation()), EXCEPTION_EXECUTE_HANDLER) //�������쳣, ��¼�쳣��code, ����dump!!
-//	{
-//		printf("%x\n", code);
-//		wchar_t msg[512];
-//		wsprintf(msg, L"Exception happened. Exception code is %x", code);
-//		MessageBox(NULL, msg, L"Exception", MB_OK); //��ʾ��Ϣ���û�
-//	}
-//	CloseHandle(hFile); //�ر�Dump�ļ�
-//	getchar();
-//	return 0;
-//}
+int APIENTRY _tWinMain(HINSTANCE hInstance,
+                       HINSTANCE hPrevInstance,
+                       LPTSTR    lpCmdLine,
+                       int       nCmdShow)
+{
+	// ����һ��Dump�ļ�
+	HANDLE hFile = CreateFile(_T("MiniDump.dmp"), GENERIC_READ | GENERIC_WRITE,
+		0, NULL, CREATE_ALWAYS, FILE_ATTRIBUTE_NORMAL, NULL);
+	int code;
+	__try
+	{
+		// ���Լ�ʵ�ֵ�main������װһ��, ����try .. except ����. �����������쳣�����Զ�����dump
+		cocosMain(hInstance, hPrevInstance, lpCmdLine, nCmdShow);
+	}
+	__except (code = GetExceptionCode(), DumpMiniDump(hFile, GetExceptionInformation()), EXCEPTION_EXECUTE_HANDLER) //�������쳣, ��¼�쳣��code, ����dump!!
+	{
+		printf("%x\n", code);
+		wchar_t msg[512];
+		wsprintf(msg, L"Exception happened. Exception code is %x", code);
+		MessageBox(NULL, msg, L"Exception", MB_OK); //��ʾ��Ϣ���û�
+	}
+	CloseHandle(hFile); //�ر�Dump�ļ�
+	getchar();
+	return 0;
+}

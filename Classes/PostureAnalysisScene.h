@@ -7,6 +7,7 @@
 #include "MovieVideoLayer.h"
 #include "DataAnalysisScene.h"
 #include "SerialMager.h"
+#include "MyMenu.h"
 
 USING_NS_CC;
 class DemoVideoLayer;
@@ -36,7 +37,7 @@ public:
 	CCMenuItemImage* m_pFrontAndSideViewItem;
 	CCMenuItemImage* m_pFrontViewItem2;
 	CCMenuItemImage* m_pFrontDemoViewItem;
-	CCMenu* m_pMenu;
+	MyMenu* m_pMenu;
 	CCMoveBy* m_pUpMoveBy;
 	CCMoveBy* m_pDownMoveBy;
 	float m_curSingle;

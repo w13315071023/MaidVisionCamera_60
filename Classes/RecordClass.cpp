@@ -54,9 +54,9 @@ void RecordClass::ThreadCallBack()
 		{
 			if (!CameraGetImageBuffer(m_hCamera, &FrameInfo, &bydFrameBuffer, 20))
 			{
-				m_curTime = GetTime();
-				printf("%p时间间隔%f\n", this, m_curTime - m_lastTime);
-				m_lastTime = m_curTime;
+				//m_curTime = GetTime();
+				//printf("%p时间间隔%f\n", this, m_curTime - m_lastTime);
+				//m_lastTime = m_curTime;
 
 				//CameraImageProcess(m_hCamera, bydFrameBuffer, FrameBufferRGB24, &FrameInfo);
 				memcpy(m_Buffer[m_BufferIndex]->FrameData, bydFrameBuffer, FrameInfo.uBytes);

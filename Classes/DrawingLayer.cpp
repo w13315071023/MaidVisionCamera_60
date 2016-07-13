@@ -1,5 +1,6 @@
 #include "DrawingLayer.h"
 #include "PostureAnalysisScene.h"
+#include "MyMenu.h"
 
 DrawingLayer::DrawingLayer(void)
 {
@@ -109,7 +110,7 @@ bool DrawingLayer::init()
     this->addChild(m_pBlueLayer);
     this->addChild(m_pYellowLayer);
     //将按钮添加到按钮层并渲染
-    CCMenu* pMenu = CCMenu::create(
+	MyMenu* pMenu = MyMenu::create(
                                 m_pMenuItemToggle,
                                 m_pDrawingItem,
                                 m_pDeleteItem,

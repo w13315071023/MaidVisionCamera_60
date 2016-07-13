@@ -161,7 +161,7 @@ bool PostureAnalysisScene::init()
 	m_pDanjian->setPosition(ccp(116-38,80));
 	m_pXunhuan->setPosition(ccp(116 + 38, 80));
 	
-	m_pMenu = CCMenu::create(
+	m_pMenu = MyMenu::create(
 		pBackItem,
 		m_pREWItem,
 		m_pFFItem,

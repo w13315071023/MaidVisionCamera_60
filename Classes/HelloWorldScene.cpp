@@ -6,6 +6,7 @@
 #include "GolfXIMager.h"
 #include "MovieVideoLayer.h"
 #include "RecordClass.h"
+#include "MyMenu.h"
 
 USING_NS_CC;
 
@@ -126,7 +127,7 @@ bool HelloWorld::init()
 		this,
 		menu_selector(HelloWorld::menuSettingCallback));
 	pSetting->setPosition(ccp(VISIBLEW/2,130));
-	CCMenu* pMenu = CCMenu::create(
+	MyMenu* pMenu = MyMenu::create(
 								m_pCueTtpeArr[0],
 								m_pCueTtpeArr[1],
 								m_pCueTtpeArr[2],
