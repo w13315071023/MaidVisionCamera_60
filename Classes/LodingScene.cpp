@@ -35,7 +35,7 @@ bool LodingScene::init()
 	CameraEnumerateDevice(cameraInfo, &Ext_cameraNum);
 
 	printf("≥ı ºªØLodingScene\n");
-	GolfXIMager::getInstence();
+	//GolfXIMager::getInstence();
 	SerialMager::getInstence();
 	ResetGGMager::getInstance();
 	if (Ext_cameraNum != 0)

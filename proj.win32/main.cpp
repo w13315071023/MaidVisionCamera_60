@@ -55,17 +55,7 @@ int  cocosMain(HINSTANCE hInstance,
 	UNREFERENCED_PARAMETER(hPrevInstance);
 	UNREFERENCED_PARAMETER(lpCmdLine);
 
-	Ext_TiaoShi = false;
-	if (!Ext_TiaoShi)
-	{
-		freopen("DeBugMsg.txt", "w", stdout);
-		printf("hello, world!");
-	}
-	if (Ext_TiaoShi && AllocConsole())
-	{
-		freopen("CONOUT$", "w", stdout);
-		printf("hello, world!");
-	}
+	
 	// create the application instance
 	AppDelegate app;
 	CCEGLView* eglView = CCEGLView::sharedOpenGLView();
@@ -91,6 +81,7 @@ int  cocosMain(HINSTANCE hInstance,
 	eglView->setFrameSize(w, h);
 
 	return CCApplication::sharedApplication()->run();
+
 }
 
 int APIENTRY _tWinMain(HINSTANCE hInstance,
@@ -98,6 +89,17 @@ int APIENTRY _tWinMain(HINSTANCE hInstance,
                        LPTSTR    lpCmdLine,
                        int       nCmdShow)
 {
+	Ext_TiaoShi = false;
+	if (!Ext_TiaoShi)
+	{
+		freopen("DeBugMsg.txt", "w", stdout);
+		printf("hello, world!");
+	}
+	if (Ext_TiaoShi && AllocConsole())
+	{
+		freopen("CONOUT$", "w", stdout);
+		printf("hello, world!");
+	}
 	// ����һ��Dump�ļ�
 	HANDLE hFile = CreateFile(_T("MiniDump.dmp"), GENERIC_READ | GENERIC_WRITE,
 		0, NULL, CREATE_ALWAYS, FILE_ATTRIBUTE_NORMAL, NULL);
@@ -116,5 +118,10 @@ int APIENTRY _tWinMain(HINSTANCE hInstance,
 	}
 	CloseHandle(hFile); //�ر�Dump�ļ�
 	getchar();
+
+	if (Ext_TiaoShi)
+	{
+		FreeConsole();
+	}
 	return 0;
 }

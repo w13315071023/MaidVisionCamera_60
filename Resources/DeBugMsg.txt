@@ -1,13 +1,4 @@
 hello, world!Ready for GLSL
 Ready for OpenGL 2.0
 初始化LodingScene
-GolfSensorInterface Tester (DLL v4.7.0 alpha 1)
-Open: false
-Connected: false
-Armed: false
-Sleeping: false
-Leveling: false
- 
 初始化HelloWorld
-WM_LBUTTONDOWN
-WM_LBUTTONUP

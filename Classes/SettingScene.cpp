@@ -2,6 +2,7 @@
 #include "MovieVideoLayer.h"
 #include "RecordClass.h"
 #include "UINode.h"
+#include "MyMenu.h"
 
 CCScene* SettingScene::getScene()
 {
@@ -125,7 +126,7 @@ bool SettingScene::init()
 	CCMenuItemImage* pEnter = CCMenuItemImage::create("SettingUI/qdan1.png", "SettingUI/qdan2.png", this, menu_selector(SettingScene::menuCallBack));
 	pEnter->setPosition(ccp(VISIBLEW / 2, 90));
 
-	CCMenu* pMenu = CCMenu::create(pEnter, pSetCameraItem, pSetQingjingItem, NULL);
+	MyMenu* pMenu = MyMenu::create(pEnter, pSetCameraItem, pSetQingjingItem, NULL);
 	pMenu->setPosition(CCPointZero);
 
 	this->addChild(pSetting);
