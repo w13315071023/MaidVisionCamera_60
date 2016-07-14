@@ -1,4 +1,28 @@
 hello, world!Ready for GLSL
 Ready for OpenGL 2.0
 初始化LodingScene
+初始化CameraCamera MV-GE132GC#C0A80115
+初始化CameraCamera MV-UB30#FAC24A4A-1
 初始化HelloWorld
+WM_LBUTTONDOWN
+WM_LBUTTONUP
+进入系统
+GolfSensorInterface Tester (DLL v4.7.0 alpha 1)
+转到姿势分析界面
+初始化PostureAnalysisScene
+初始化DemoVideoLayer
+初始化MovieVideoLayer
+初始化DemoVideoLayer
+初始化MovieVideoLayer
+Open: false
+Connected: false
+Armed: false
+Sleeping: false
+Leveling: false
+ 
+WM_LBUTTONDOWN
+WM_LBUTTONUP
+初始化HelloWorld
+WM_LBUTTONDOWN
+WM_LBUTTONUP
+1相机退出2相机退出

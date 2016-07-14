@@ -21,8 +21,6 @@
 #include "CameraGrabber.h"
 #include <ocidl.h>
 #include "CameraImage.h"
-//#include "JHCap.h"
-#include "SerialDll.h"
 extern "C"
 {
 #include <libavcodec/avcodec.h>

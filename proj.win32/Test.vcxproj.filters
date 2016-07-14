@@ -7,14 +7,14 @@
     <Filter Include="Classes">
       <UniqueIdentifier>{bb6c862e-70e9-49d9-81b7-3829a6f50471}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Classes\PostureAnalysis">
-      <UniqueIdentifier>{123fc4d1-8c5b-455d-82eb-3a972ff98def}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Classes\DataAnalysis">
       <UniqueIdentifier>{c2e1574a-389f-4726-bb30-90a2606dbb1e}</UniqueIdentifier>
     </Filter>
     <Filter Include="Classes\HelloWorld">
       <UniqueIdentifier>{c89280a9-bf99-465c-b417-613ba60ecf5f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\PostureAnalysis">
+      <UniqueIdentifier>{123fc4d1-8c5b-455d-82eb-3a972ff98def}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>

@@ -89,6 +89,25 @@ int APIENTRY _tWinMain(HINSTANCE hInstance,
                        LPTSTR    lpCmdLine,
                        int       nCmdShow)
 {
+	//HANDLE m_hMapFile = OpenFileMapping(FILE_MAP_WRITE, FALSE, L"DigitGolf");
+	//if (!m_hMapFile)
+	//{
+	//	m_hMapFile = CreateFileMapping((HANDLE)0xFFFFFFFF, NULL, PAGE_READWRITE, 0, 0x1000, L"DigitGolf");
+	//}
+	//else
+	//{
+	//	return 0;
+	//}
+
+	HANDLE m_hSingleProMutex;//设置同一时间只能有一个程序运行
+	m_hSingleProMutex = CreateMutex(NULL, TRUE, L"SinglePro");
+	if (m_hSingleProMutex)
+	{
+		if (ERROR_ALREADY_EXISTS == GetLastError())
+		{
+			exit(0);
+		}
+	}
 	Ext_TiaoShi = false;
 	if (!Ext_TiaoShi)
 	{

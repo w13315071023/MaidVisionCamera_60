@@ -30,8 +30,25 @@ SerialMager::SerialMager(void)
 {
 	m_curMsg = 0;
 }
+#include "_include\SerialDll.h"
 bool SerialMager::init()
 {
+	HINSTANCE hDll;
+	hDll = LoadLibrary(_T("SerialDll.dll"));
+	int index = GetLastError();
+	if (!hDll)
+	{
+		return false;
+	}
+	get_com_port = (GET_COM)GetProcAddress(hDll, (LPCSTR)"?get_com_port@@YA_NPAPADAAH@Z");
+	index = GetLastError();
+	open_com_port = (COM_OFF_ON)GetProcAddress(hDll, (LPCSTR)"?open_com_port@@YA_NPBD@Z");
+	fetch_msg = (FETCH_MSG)GetProcAddress(hDll, (LPCSTR)"?fetch_msg@@YAHXZ");
+	set_threshold = (SET_THRESHOLD)GetProcAddress(hDll, (LPCSTR)"?set_threshold@@YAXH@Z");
+	if (!get_com_port || !open_com_port || !fetch_msg || !set_threshold)
+	{
+		return false;
+	}
 	m_IsCom = false;
 	int length;
 	m_IsCom = get_com_port(&com_num, length);
